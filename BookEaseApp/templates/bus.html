@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buses</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+    }
+    .container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+    }
+    h1 {
+        font-size: 36px;
+        color: #007bff;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .bus-entry {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: #f5f5f5;
+    }
+    .bus-entry p {
+        font-size: 18px;
+        color: #333333;
+        margin-bottom: 10px;
+    }
+    .bus-entry img {
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+
+
+    .container {
+        padding: 30px;
+    }
+    /* Styling for flight details */
+    .bus-entry strong {
+        color: #007bff;
+    }
+</style>
+<body>
+    <div class="container">
+    <h1>Buses Available</h1>
+
+    <div class="bus-entry">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.91eVmnGbYniGh4W2qEytGwHaCx&pid=Api&P=0&h=180" alt="Bus Image">
+
+        <p style="margin-bottom: 15px;"><strong>Company Name:</strong> {{ bus_data.company_name }}</p>
+        <p style="margin-bottom: 15px;"><strong>Origin:</strong> {{ bus_data.origin }}</p>
+        <p style="margin-bottom: 15px;"><strong>Destination:</strong> {{ bus_data.destination }}</p>
+        <p style="margin-bottom: 15px;"><strong>Departure:</strong> {{ bus_data.departure_time }}</p>
+        <p style="margin-bottom: 15px;"><strong>Arrival:</strong> {{ bus_data.arrival_time }}</p>
+        <p style="margin-bottom: 15px;"><strong>Price:</strong> {{ bus_data.price }}</p>
+    </div>
+</div>
+
+</body>
+</html>
